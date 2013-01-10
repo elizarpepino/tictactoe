@@ -53,7 +53,7 @@
 			player = this;
 
 		// Player's name defaults to Player
-		this.name = "Player";
+		this.name = name || "Player";
 		// Player's main board
 		this.board = [
 			[0,0,0],
@@ -68,6 +68,14 @@
 			if (this.board[x][y] !== 1) {
 				this.board[x][y] = 1;
 				emitEvent('select');
+			}
+		};
+		this.aiSelect = function(x, y) {
+			if (this.board[x][y] !== 1) {
+				this.board[x][y] = 1;
+				emitEvent('select');
+			} else {
+				this.aiSelect(x, y);
 			}
 		};
 		this.isWin = function() {
