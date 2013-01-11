@@ -1,5 +1,5 @@
 # Tic Tac Toe
-### A basic tic tac toe game written in javascript
+A basic tic tac toe game written in javascript
 
 ## Requirements
  * [Node.js](http://nodejs.org/)
