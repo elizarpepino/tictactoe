@@ -87,8 +87,9 @@
     * @params:
     * <Object> p - An object for setting player's attributes
     *              Accepted datas are:
-    *              name - <String> defaults to "Player"
-    *              type - <String> accepted values are "ai" and "player", defaults to "ai"
+    *              name - <String> Player's name defaults to "Player"
+    *              type - <String> Player type, should be either of the following:
+    *                              "ai", "player" (defaults to "ai")
     */
     var Player = function(p) {
 
